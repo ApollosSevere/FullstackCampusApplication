@@ -1,0 +1,355 @@
+.fill-window {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+body {
+  background: linear-gradient(#ffffff, #c0c0c0);
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+nav {
+  align-items: center;
+  background-color: #c0c0c0;
+  color: #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 10px;
+}
+main {
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.header__links {
+  color: #333333;
+  font-size: 24px;
+  line-height: 32px;
+}
+.header__right {
+  display: flex;
+  gap: 20px;
+}
+
+/* ---------- Allcampuses Component ---------- */
+.collection {
+  margin-top: 30px;
+}
+.collection__heading {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.collection__headingButton {
+  width: 198px;
+  height: 47px;
+  border: none;
+  background: #30cdff;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+}
+.collection__headingTitle {
+  font-family: "Roboto Mono" !important;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 36px;
+  line-height: 63px;
+  transition: 0.6s;
+}
+.collection__headingButton:hover {
+  background-color: #32add3;
+  width: 200px;
+  height: 50px;
+}
+.allCollections {
+  max-width: 1000px;
+  padding-top: 30px;
+}
+
+/* ---------- Allcampuses Component ---------- */
+
+/* ----------  CampusView Component ---------- */
+.campusView {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  max-width: 99%;
+  height: 140px;
+  margin-bottom: 30px;
+  padding-right: 20px;
+  background-color: #c0c0c0;
+  border: #333333 1px solid;
+}
+.campusView__left {
+  width: 40%;
+  height: 100%;
+  padding: 7px;
+}
+.campusView__right {
+  text-align: left;
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+.campusView__img {
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+}
+.campusView__updates {
+  margin-top: 30px;
+}
+.campusView__editBtn {
+  position: absolute;
+  top: 72%;
+}
+.campusView__DelBtn {
+  position: absolute;
+  left: 76%;
+  top: 72%;
+}
+.campusView__link h2 {
+  font-size: 24px;
+}
+
+/* ----------  AllStudents Component ---------- */
+.allStudents {
+  padding-top: 30px;
+  max-width: 1000px;
+}
+
+/* ----------  StudentsView Component ---------- */
+.studentView {
+  position: relative;
+  max-width: 100%;
+  height: 176px;
+  background-color: #e9e6e6;
+  padding: 7px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+}
+.studentView__top {
+  height: 100px;
+}
+.studentView__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.studentView__link {
+  position: relative;
+  font-size: 12px;
+  top: 8px;
+}
+.studentView__College {
+  position: absolute;
+  top: 80%;
+  font-size: 14px;
+}
+
+.studentView__btn {
+  position: absolute;
+  top: 82%;
+  left: 78%;
+  padding: 0;
+}
+
+/* ----------  Single CampusComponent ---------- */
+.singleCampus {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 34px;
+}
+.singleCampus__img {
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+}
+.singleCampus__imgBox {
+  height: 350px;
+  width: 100%;
+}
+.singleCampus__bottom {
+  margin-top: 18px;
+  padding: 0 15px;
+}
+
+/* ----------  Single Student Component ---------- */
+
+.singleStudent__right {
+  position: relative;
+}
+.singleStudent__bottom {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+}
+.singleCampus__collection {
+  padding-top: 30px;
+  margin: 0 auto;
+}
+.singleStudent__updaterigtht {
+  position: relative;
+}
+.singleStudent__area {
+  position: absolute;
+  left: 15%;
+}
+.selectCampus {
+  width: 390px;
+  height: 50px;
+  padding-left: 40px;
+}
+
+/* ----------  EditCampusView Component ---------- */
+.editCampusView {
+  position: relative;
+  max-width: 1000px;
+  height: 120px;
+  background-color: #e9e6e6;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+}
+
+.editCampusView__left {
+  height: 100%;
+  width: 400px;
+  display: flex;
+  gap: 15px;
+}
+.editCampusView__img {
+  width: 40%;
+  height: 100%;
+  border-radius: 5px;
+}
+.editCampusView__link {
+  position: relative;
+  font-size: 12px;
+  top: 8px;
+}
+.editCampusView__nav {
+  position: absolute;
+  left: 75%;
+  top: 35%;
+}
+.editCampusView__College {
+  position: absolute;
+  top: 80%;
+  font-size: 14px;
+}
+.editCampusView__btn {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+}
+.editCampusView__button {
+  height: 63px;
+  border: none;
+  background: #30cdff;
+  border-radius: 15px;
+  color: white;
+  padding: 0 20px;
+  font-size: 30px;
+  margin-top: 15px;
+}
+@media screen and (min-width: 900px) {
+  .editCampusView__btn {
+    position: absolute;
+    top: 58%;
+    left: 75%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .editCampusView__nav {
+    position: absolute;
+    left: 80%;
+    top: 35%;
+  }
+}
+
+/* ---------- EditCampust Component ---------- */
+.editCampus__collection {
+  margin-top: 70px;
+}
+.editCampus__collection__heading {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.editCampus__collection__headingButton {
+  width: 198px;
+  height: 47px;
+  border: none;
+  background: #30cdff;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  left: 55%;
+}
+.editCampus__collection__headingTitle {
+  font-family: "Roboto Mono" !important;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 42px;
+  padding-bottom: 20px;
+  line-height: 63px;
+  transition: 0.6s;
+  margin: 0 auto;
+}
+.editCampus__collection__headingButton:hover {
+  background-color: #32add3;
+  width: 200px;
+  height: 50px;
+}
+.editCampus__allStudents {
+  padding-top: 90px;
+  max-width: 1000px;
+}
+
+.editCampus__editTab {
+  position: relative;
+}
+.selectEditCampus {
+  left: 10%;
+  width: 100%;
+  height: 60px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media screen and (min-width: 900px) {
+  .selectEditCampus {
+    position: absolute;
+    left: 18%;
+    width: 35%;
+    height: 50px;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+  .editCampus__collection__headingButton {
+    position: absolute;
+  }
+}
+
+.off {
+  display: none;
+}
+.on {
+  display: block;
+}
